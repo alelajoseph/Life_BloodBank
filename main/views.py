@@ -53,7 +53,7 @@ def authenticate_view(request):
             otp = Otp.objects.create(mail=email, username=username, otp=random.randint(100000, 999999))
             otp.save()
 
-            sendmail(email, "BloodBridge OTP", f"Hello {username},\n\nYour OTP is {otp.otp}\n\nIf You did not request this code, please ignore this email.\n\nRegards,\nBloodBridge Team")
+            sendmail(email, "Life_BloodBank OTP", f"Hello {username},\n\nYour OTP is {otp.otp}\n\nIf You did not request this code, please ignore this email.\n\nRegards,\nBloodBridge Team")
 
             return JsonResponse({"success": True})
 
