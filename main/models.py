@@ -19,7 +19,6 @@ class Profile(models.Model):
     state = models.CharField(max_length=100, default='')
     donor = models.BooleanField(default=True)
 
-
 class Appointment(models.Model):
     reason = models.CharField(max_length=120)
     contact = models.CharField(max_length=20)
