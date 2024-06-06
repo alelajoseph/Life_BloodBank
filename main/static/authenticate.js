@@ -53,7 +53,7 @@ function sign_up(){
         return;
     }
     if (password.length < 8){
-        $("#sign_up_message").html("Password must be atleast 8 characters long");
+        $("#sign_up_message").html("Password must be Atleast 8 characters long");
         $('#sign_up_button').html('Sign Up');
         return;
     }
